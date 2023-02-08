@@ -170,7 +170,7 @@ img {
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
+/* Bade phones or tabs ke liye */
 @media screen and (max-width: 992px) {
   .container {
     margin-left: var(--mb-1-5);
@@ -187,7 +187,7 @@ img {
   }
 }
 
-/* For medium devices */
+/* medium phones ke liye  */
 @media screen and (max-width: 768px) {
   body {
     margin: 0 0 var(--header-height) 0;
