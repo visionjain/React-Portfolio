@@ -36,66 +36,59 @@
   color: var(--title-color);
   font-weight: var(--font-medium);
   transition: .3s;
-} 
-
-/* icons chupa diye */
+}
 
 .nav__icon,
 .nav__close,
-.nav__toggle{
+.nav__toggle {
   display: none;
 }
 
-/* Activating link */
-
+/* Active Link */
 .active-link,
-.nav__link:hover {
+.nav__link:hover{
   color: var(--title-color-dark);
 }
 
-/* khatam tata bye bye*/
-
-/* responsive bhi to karna h */
-
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
 @media screen and (max-width: 768px) {
-  .header {
+  .header{
     top: initial;
     bottom: 0;
   }
 
-  .nav{ 
+  .nav{
     height: var(--header-height);
   }
 
-  .nav__menu {
+  .nav__menu{
     position: fixed;
     bottom: -100%;
     left: 0;
     width: 100%;
-    background-color: var(--body-colour);
+    background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
-    transition: .3S;
+    transition: .3s;
   }
 
-  /* menu ka option */
-
-  .show-menu {
+/* Show Menu */
+  .show-menu{
     bottom: 0;
   }
-
-  .nav__list {
+  .nav__list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 
-  .nav__icon {
-    font-size: 1.2rem;
+  .nav_-icon{
+    font-size: 1.2rem;;
   }
 
-  .nav__close {
+  .nav__close{
     position: absolute;
     right: 1.3rem;
     bottom: .5rem;
@@ -108,37 +101,25 @@
     color: var(--title-color-dark);
   }
 
-
-/* nav toggle phone se pc wala v/v */
-  
-
-  .nav__toggle {
+  .nav__toggle{
     font-size: 1.1rem;
     cursor: pointer;
   }
 
   .nav__icon,
   .nav__close,
-  .nav__toggle{
-    display: block;
+  .nav__toggle {
+  display: block;
   }
 }
 
-/* bichare jio phone walo ke liye */
-
-@media screen and (max-width: 350px) {
+/* For small devices */
+@media screen and (max-width: 350px){
   .nav__menu{
-    padding: 2rem 0.25rem 4rem;
+    padding: 2rem 0.35rem 4rem;
   }
-   
-  .nav__list {
+
+  .nav__list{
     column-gap: 0;
   }
 }
-
-
-
-
-/* problems ---
-1) menu open and close button , only open working and close overlapping open button.
-*/
