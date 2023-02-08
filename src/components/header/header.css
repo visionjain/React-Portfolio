@@ -42,7 +42,7 @@
 
 .nav__icon,
 .nav__close,
-.nav__toggle {
+.nav__toggle{
   display: none;
 }
 
@@ -69,14 +69,20 @@
 
   .nav__menu {
     position: fixed;
-    bottom: 0;
+    bottom: -100%;
     left: 0;
     width: 100%;
     background-color: var(--body-colour);
     padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: .3S;
+  }
+
+  /* menu ka option */
+
+  .show-menu {
+    bottom: 0;
   }
 
   .nav__list {
@@ -102,9 +108,37 @@
     color: var(--title-color-dark);
   }
 
+
+/* nav toggle phone se pc wala v/v */
+  
+
+  .nav__toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
   .nav__icon,
   .nav__close,
-  .nav__toggle {
+  .nav__toggle{
     display: block;
   }
 }
+
+/* bichare jio phone walo ke liye */
+
+@media screen and (max-width: 350px) {
+  .nav__menu{
+    padding: 2rem 0.25rem 4rem;
+  }
+   
+  .nav__list {
+    column-gap: 0;
+  }
+}
+
+
+
+
+/* problems ---
+1) menu open and close button , only open working and close overlapping open button.
+*/
