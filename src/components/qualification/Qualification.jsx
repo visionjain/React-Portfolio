@@ -139,4 +139,6 @@ const Qualification = () => {
   )
 }
 
+/* six qualification div , toggle have some errors but working , dont know why */
+
 export default Qualification
