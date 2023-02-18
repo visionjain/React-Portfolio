@@ -28,7 +28,7 @@ const Qualification = () => {
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Design</h3>
+                <h3 className="qualification__title">Web Designer</h3>
                 <span className="qualification__subtitle">SRM Institute Of Science and Technology</span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i> 2023 - Present 
